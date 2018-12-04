@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.marcin.projektinterfejsukk.TableRowWithContextMenuInfo xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:weightSum="1">
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_marginTop="5dp"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight=".06"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="#e6e6e6"
+        android:onClick="onClickCheckbox"/>
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/textViewName"
+        android:layout_weight=".25"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="#e6e6e6" />
+
+    <ImageView
+        android:layout_marginTop="5dp"
+        android:id="@+id/textImage"
+        android:layout_weight=".44"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="#e6e6e6"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:id="@+id/textViewPrice"
+        android:layout_weight=".25"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="#e6e6e6" />
+
+
+</com.example.marcin.projektinterfejsukk.TableRowWithContextMenuInfo>

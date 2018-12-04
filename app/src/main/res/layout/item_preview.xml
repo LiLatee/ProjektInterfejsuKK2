@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/frame_layout">
+
+    <android.support.design.widget.FloatingActionButton
+        android:backgroundTint="#427ace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|start"
+        android:layout_marginStart="15dp"
+        android:onClick="onClickBack"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_arrow_back" />
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textViewPreviewName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textSize="30sp"
+            android:layout_marginTop="15dp"/>
+
+        <ImageSwitcher
+            android:id="@+id/imageSwitcher"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/textViewPreviewName"
+            android:layout_marginTop="10dp" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageSwitcher"
+            android:background="@drawable/obramowanie">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" />
+        </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/textViewPreviewPrice"
+        android:layout_below="@id/horizontalScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:layout_marginStart="15dp"/>
+
+
+    <TextView
+        android:id="@+id/textViewPreviewDescription"
+        android:layout_below="@id/textViewPreviewPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp" />
+
+</RelativeLayout>
+    </ScrollView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        app:backgroundTint="#427ace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add_shopping_cart"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="15dp"
+        android:onClick="onClickAddToCart"
+        android:layout_marginBottom="15dp"/>
+
+</FrameLayout>

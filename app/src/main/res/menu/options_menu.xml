@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Szukaj"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        app:showAsAction="collapseActionView|always" />
+
+
+    <item android:id="@+id/categories"
+        android:title="Kategorie"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_filter_list_black_24dp">
+
+
+        <group android:checkableBehavior="single"
+            android:id="@+id/group">
+            <item
+                android:id="@+id/soccer"
+                android:title="Piłka nożna" />
+            <item
+                android:id="@+id/running"
+                android:title="Bieganie" />
+            <item
+                android:id="@+id/cycling"
+                android:title="Kolarstwo" />
+            <item
+                android:id="@+id/allCategories"
+                android:title="Wszystkie"
+                android:checked="true"/>
+        </group>
+
+    </item>
+
+
+</menu>
