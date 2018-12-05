@@ -23,8 +23,20 @@
             </intent-filter>
         </activity>
         <activity android:name=".MyCart">
+        <intent-filter>
+            <action android:name="android.intent.action.MyCart" />
+
+        </intent-filter>
+    </activity>
+        <activity android:name=".Contact">
             <intent-filter>
-                <action android:name="android.intent.action.MyCart" />
+                <action android:name="android.intent.action.Contact" />
+
+            </intent-filter>
+        </activity>
+        <activity android:name=".Settings">
+            <intent-filter>
+                <action android:name="android.intent.action.Settings" />
 
             </intent-filter>
         </activity>

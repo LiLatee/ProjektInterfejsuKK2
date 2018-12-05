@@ -68,6 +68,7 @@ public class Main extends AppCompatActivity
                     @Override
                     public boolean onNavigationItemSelected(MenuItem menuItem)
                     {
+                        Intent i;
                         switch (menuItem.getItemId())
                         {
                             case R.id.log_in:
@@ -81,7 +82,15 @@ public class Main extends AppCompatActivity
                                 //mDrawerLayout.openDrawer(GravityCompat.START);
                                 break;
                             case R.id.my_cart:
-                                Intent i = new Intent(getBaseContext(), MyCart.class);
+                                i = new Intent(getBaseContext(), MyCart.class);
+                                startActivity(i);
+                                break;
+                            case R.id.contact:
+                                i = new Intent(getBaseContext(), Contact.class);
+                                startActivity(i);
+                                break;
+                            case R.id.settings:
+                                i = new Intent(getBaseContext(), Settings.class);
                                 startActivity(i);
                                 break;
                         }

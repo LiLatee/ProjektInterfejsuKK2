@@ -86,6 +86,14 @@ public class MyCart extends AppCompatActivity
                                 Intent i = new Intent(getBaseContext(), MyCart.class);
                                 startActivity(i);
                                 break;
+                            case R.id.contact:
+                                i = new Intent(getBaseContext(), Contact.class);
+                                startActivity(i);
+                                break;
+                            case R.id.settings:
+                                i = new Intent(getBaseContext(), Settings.class);
+                                startActivity(i);
+                                break;
                         }
                         // set item as selected to persist highlight
                         // close drawer when item is tapped
